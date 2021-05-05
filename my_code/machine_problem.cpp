@@ -3,7 +3,15 @@
 #include <utility>
 #include <list>
 
-// LRUCache data structure
+// 3.1
+float num_sets(int size, int assoc, int block_size)
+{
+    return size / (assoc * block_size);
+}
+
+// 3.2
+
+// 3.2.1 LRUCache data structure
 class LRUCache
 {
 private:
@@ -24,7 +32,7 @@ public:
     {
         cap = capacity;
     }
-    ~LRUCache(){}
+    ~LRUCache() {}
 
     int get(int key)
     {
@@ -67,9 +75,9 @@ public:
     void printll()
     {
         // linked list contents
-        for (const auto& node : l)
+        for (const auto &node : l)
         {
-            std::cout << node.first <<', ' << node.second << "\n";
+            std::cout << node.first << ', ' << node.second << "\n";
         }
     }
 };
@@ -81,7 +89,16 @@ public:
  * obj->put(key,value);
  */
 
-float num_sets(int32 size, int32 assoc, int32 block_size)
-{
-    return size / (assoc * block_size);
-}
+// 3.2.2
+
+// 3.2.3
+
+// 3.3
+
+// 3.4
+
+// 3.5
+
+// 3.6
+// 3.6.1
+// 3.6.2
